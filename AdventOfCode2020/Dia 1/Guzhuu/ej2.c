@@ -35,9 +35,9 @@ int main(int argc, char const *argv[])
 	start = clock();
 	for(int i = 0; i < count; i++){
 		int buscado2 = buscado - arr[i];
-		for(int j = i; j < count; j++){
+		for(int j = i+1; j < count; j++){
 			int posible_existencia = buscado2 - arr[j];
-			for(int k = j; k < count; k++){
+			for(int k = j+1; k < count; k++){
 				if(arr[k] == posible_existencia){
 					encontrado = arr[i] * arr[j] * arr[k];
 				}
@@ -51,8 +51,8 @@ int main(int argc, char const *argv[])
 	encontrado = -1;
 	start = clock();
 	for(int i = 0; i < count; i++){
-		for(int j = i; j < count; j++){
-			for(int k = j; k < count; k++){
+		for(int j = i+1; j < count; j++){
+			for(int k = j+1; k < count; k++){
 				if(arr[i] + arr[j] + arr[k] == buscado){
 					encontrado = arr[i] * arr[j] * arr[k];
 				}
