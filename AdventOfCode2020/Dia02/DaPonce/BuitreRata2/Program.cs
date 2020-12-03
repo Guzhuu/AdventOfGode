@@ -17,8 +17,6 @@ namespace BuitreRata2
                 int first = int.Parse(ruleParts[0]);
                 int second = int.Parse(ruleParts[1]);
 
-                int rep = 0;
-
                 if (lineParts[2][first - 1] == lookingFor ^ lineParts[2][second - 1] == lookingFor) correctPasswords++;
             }
             Console.WriteLine(correctPasswords);
