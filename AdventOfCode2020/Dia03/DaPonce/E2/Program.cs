@@ -14,7 +14,7 @@ namespace E2
             totalBarbol = totalBarbol * barbolCount(3, 1, lines);
             totalBarbol = totalBarbol * barbolCount(5, 1, lines);
             totalBarbol = totalBarbol * barbolCount(7, 1, lines);
-            totalBarbol = totalBarbol * barbolCount(1, 2, lines);
+            totalBarbol = totalBarbol * barbolCount(1, 3, lines);
 
             Console.WriteLine("Total: " + totalBarbol);
         }
