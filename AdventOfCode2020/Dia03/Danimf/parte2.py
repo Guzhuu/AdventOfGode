@@ -3,7 +3,7 @@ def resolver(camino, movimientoX, movimientoY):
     actualY = 0
     arboles = 0
 
-    while (actualY := actualY + movimientoY) <= len(camino):
+    while (actualY := actualY + movimientoY) < len(camino):
         actualX = (actualX + movimientoX) % len(camino[actualY])
 
         if camino[actualY][actualX] == '#':
