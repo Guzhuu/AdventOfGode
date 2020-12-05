@@ -64,7 +64,6 @@ fn main() {
 		if !_passed.contains(&(x + 1)) && x < &_max{
 			_seat = *x + 1;
 		}
-		println!("{}", x);
 	}
 	println!("Seat {}", _seat);
 }
