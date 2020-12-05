@@ -7,7 +7,7 @@ import java.util.Collections;
 
 public class Parte2 {
     public static void main(String[] args) throws Exception {
-        FileReader file = new FileReader(new File("src/input.txt"));
+        FileReader file = new FileReader(new File("input.txt"));
         BufferedReader bufer = new BufferedReader(file);
 
         String asiento, fila, columna;
