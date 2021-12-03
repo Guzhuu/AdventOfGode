@@ -52,3 +52,6 @@ sol2 = task2(data)
 print(sol1)
 
 print(sol2)
+
+
+
